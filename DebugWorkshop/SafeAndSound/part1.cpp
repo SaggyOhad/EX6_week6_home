@@ -12,7 +12,7 @@ char* string_copy(char* dest, unsigned int destsize, char* src)
 void part1()
 {
 	char password[] = "secret";
-	char dest[12];
+	char dest[13]; // Switch to 13
 	char src[] = "hello world!";
 
 	string_copy(dest, 12, src);
