@@ -31,10 +31,13 @@ Point::~Point()
 
 Point& Point::operator=(const Point& other)
 {
-	delete[] _coord; // add []
-	_coord = new int[2];
-	memcpy(_coord, other._coord, 8); // switch 2 to 8 bc it's 8 byets and not 2
-	return *this;
+	if (this != &other)
+	{
+		delete[] _coord; // add []
+		_coord = new int[2];
+		memcpy(_coord, other._coord, 8); // switch 2 to 8 bc it's 8 byets and not 2
+		return *this;
+	}
 }
 
 int Point::getX() const 

@@ -16,5 +16,9 @@ int main()
 	std::cout << "p1=" << p1 << std::endl; // i added "<< p1" to fix the problem
 	std::cout << "p2=" << p2 << std::endl; // i added "<< p2" to fix the problem
 
+	// Part D
+	p2 = p2;
+	std::cout << "p2=" << p2 << std::endl;
+
 	return 0;
 }
