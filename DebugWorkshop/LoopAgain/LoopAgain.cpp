@@ -9,7 +9,7 @@ int main()
 	std::cout << "what is the size of the series? ";
 	std::cin >> size;
 
-	while (size >= 0)
+	while (size > 0) // remove = so there is no infinety loop
 	{
 		std::cout << t1 << ", ";
 
